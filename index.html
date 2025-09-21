@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Your Movie Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="app-title">🎬 Your Movie Buddy</h1>
+                <p class="app-subtitle">Let us help you choose what to watch!</p>
+                <!-- <button id="themeToggle" class="btn btn--secondary theme-toggle">
+                    <span class="material-icons">dark_mode</span>
+                </button> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Controls Section -->
+            <section class="controls-section">
+                <div class="control-card card">
+                    <div class="card__body">
+                        <h2>How many movies do you want?</h2>
+                        <div class="slider-container">
+                            <input type="range" id="movieRange" min="1" max="10" value="5" class="movie-slider">
+                            <div class="slider-value">
+                                <span id="movieCount">5</span> movies
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button id="getRecommendations" class="btn btn--primary btn--lg">
+                                <span class="material-icons">movie</span>
+                                Get Recommendations
+                            </button>
+                            <button id="surpriseMe" class="btn btn--secondary">
+                                <span class="material-icons">shuffle</span>
+                                Surprise Me!
+                            </button>
+                            <button id="refreshSuggestions" class="btn btn--outline">
+                                <span class="material-icons">refresh</span>
+                                Refresh
+                            </button>
+                            <button id="clearAll" class="btn btn--outline">
+                                <span class="material-icons">clear_all</span>
+                                Clear All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filters and Search -->
+            <section class="filters-section">
+                <div class="filter-card card">
+                    <div class="card__body">
+                        <div class="filter-row">
+                            <!-- <div class="search-container">
+                                <div class="search-input-wrapper">
+                                    <span class="material-icons search-icon">search</span>
+                                    <input type="text" id="searchMovies" placeholder="Search movies..." class="form-control search-input">
+                                </div> -->
+                            </div>
+                            <div class="language-filters">
+                                <label class="form-label">Filter by Language:</label>
+                                <div class="chips-container" id="languageChips"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card card">
+                        <div class="card__body">
+                            <div class="stat-content">
+                                <span class="material-icons stat-icon">movie_creation</span>
+                                <div class="stat-text">
+                                    <span class="stat-number" id="totalMovies">83</span>
+                                    <span class="stat-label">Total Movies</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="card__body">
+                            <div class="stat-content">
+                                <span class="material-icons stat-icon">favorite</span>
+                                <div class="stat-text">
+                                    <span class="stat-number" id="favoriteCount">0</span>
+                                    <span class="stat-label">Favorites</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="card__body">
+                            <div class="stat-content">
+                                <span class="material-icons stat-icon">check_circle</span>
+                                <div class="stat-text">
+                                    <span class="stat-number" id="watchedCount">0</span>
+                                    <span class="stat-label">Watched</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading State -->
+            <section class="loading-section hidden" id="loadingSection">
+                <div class="loading-card card">
+                    <div class="card__body">
+                        <div class="loading-content">
+                            <div class="loading-spinner"></div>
+                            <p>Finding perfect movies for you...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Empty State -->
+            <section class="empty-state hidden" id="emptyState">
+                <div class="empty-card card">
+                    <div class="card__body">
+                        <div class="empty-content">
+                            <span class="material-icons empty-icon">movie_filter</span>
+                            <h3>Ready to discover amazing movies?</h3>
+                            <p>Use the controls above to get personalized movie recommendations!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Movie Results -->
+            <section class="results-section">
+                <div class="results-header hidden" id="resultsHeader">
+                    <h2 id="resultsTitle">Your Movie Recommendations</h2>
+                    <p id="resultsSubtitle">Here are some great movies picked just for you!</p>
+                </div>
+                <div class="movies-grid" id="moviesGrid"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Snackbar for notifications -->
+    <div class="snackbar hidden" id="snackbar">
+        <span id="snackbarMessage"></span>
+        <button id="snackbarClose" class="snackbar-close">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
