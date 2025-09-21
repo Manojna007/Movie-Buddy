@@ -75,7 +75,7 @@ const movieData = {
     {"id": 72, "title": "Ittefaq", "genre": ["Crime", "Mystery", "Thriller"], "language": "Hindi", "origin": "India", "description": "A double murder investigation reveals conflicting testimonies."},
     {"id": 73, "title": "Ludo", "genre": ["Comedy", "Crime", "Drama"], "language": "Hindi", "origin": "India", "description": "Four stories interconnect through chance and choice."},
     {"id": 74, "title": "AK vs AK", "genre": ["Action", "Comedy", "Crime"], "language": "Hindi", "origin": "India", "description": "A filmmaker kidnaps an actor's daughter for his movie."},
-    {"id": 75, "title": "Craazy", "genre": ["Thriller"], "language": "Kannada", "origin": "India", "description": "A psychological thriller exploring human relationships."},
+    {"id": 75, "title": "Craazxy", "genre": ["Thriller"], "language": "Hindi", "origin": "India", "description": "A psychological thriller exploring human relationships."},
     {"id": 76, "title": "Awe", "genre": ["Drama", "Fantasy", "Thriller"], "language": "Telugu", "origin": "India", "description": "Multiple interconnected stories explore human consciousness."},
     {"id": 77, "title": "Dobara", "genre": ["Thriller","Sci-fi"], "language": "Hindi", "origin": "India", "description": "A woman's second chance at life brings unexpected challenges."},
     {"id": 78, "title": "Forgotten", "genre": ["Mystery", "Thriller"], "language": "Korean", "origin": "South Korea", "description": "A man searches for his kidnapped brother and uncovers disturbing truths."},
