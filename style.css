@@ -1712,3 +1712,38 @@ select.form-control {
         font-size: var(--font-size-xs);
     }
 }
+
+/* SweetAlert2 Netflix Toast */
+/* SweetAlert2 Netflix Toast - Enhanced */
+.swal2-netflix-toast {
+  border-radius: 10px !important;
+  background: #181818 !important;
+  color: #fff !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  letter-spacing: 0.01em !important;
+  box-shadow: 0 4px 24px rgba(229,9,20,0.18) !important;
+  border: 2px solid #e50914 !important;
+  padding: 1.1em 2em !important;
+}
+
+.swal2-icon.swal2-info {
+  color: #e50914 !important;
+  border-color: #e50914 !important;
+}
+
+.swal2-title {
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+.swal2-timer-progress-bar {
+  background: #e50914 !important;
+  height: 4px !important;
+  border-radius: 0 0 8px 8px !important;
+}

@@ -132,6 +132,11 @@ function initializeApp() {
     showEmptyState();
     updateStatistics();
     
+    // Add this here:
+    if (elements.snackbarClose) {
+        elements.snackbarClose.addEventListener('click', hideSnackbar);
+    }
+
     // Check for saved theme preference or detect system preference
     const savedTheme = localStorage.getItem('movieBuddyTheme');
     if (savedTheme) {
@@ -521,42 +526,20 @@ function updateStatistics() {
 let snackbarTimeout; // Track the timeout globally
 
 function showSnackbar(message) {
-    if (!elements.snackbar || !elements.snackbarMessage) return;
-
-    // Always clear previous timeout
-    if (snackbarTimeout) clearTimeout(snackbarTimeout);
-
-    elements.snackbarMessage.textContent = message;
-    elements.snackbar.classList.remove('hidden', 'hide');
-    elements.snackbar.classList.add('show');
-
-    // Auto hide after 4 seconds
-    snackbarTimeout = setTimeout(() => {
-        hideSnackbar();
-    }, 4000);
-}
-
-function hideSnackbar() {
-    if (!elements.snackbar) return;
-
-    // Clear the timeout so manual close doesn't trigger auto-hide again
-    if (snackbarTimeout) {
-        clearTimeout(snackbarTimeout);
-        snackbarTimeout = null;
-    }
-
-    elements.snackbar.classList.add('hide');
-    elements.snackbar.classList.remove('show');
-
-    setTimeout(() => {
-        elements.snackbar.classList.add('hidden');
-        elements.snackbar.classList.remove('hide');
-    }, 300);
-}
-
-// Make sure this is set up in your event listeners:
-if (elements.snackbarClose) {
-    elements.snackbarClose.addEventListener('click', hideSnackbar);
+    Swal.fire({
+        toast: true,
+        position: 'bottom',
+        icon: 'info',
+        title: message,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+        background: '#222',
+        color: '#fff',
+        customClass: {
+            popup: 'swal2-netflix-toast'
+        }
+    });
 }
 
 // Theme toggle - fixed implementation
