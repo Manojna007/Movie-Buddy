@@ -260,7 +260,7 @@ function toggleLanguageFilter(language, chipElement) {
         chipElement.classList.add('active');
     }
     
-    if appState.currentRecommendations.length > 0) {
+    if (appState.currentRecommendations.length > 0) {
         filterAndDisplayMovies();
     }
 }
