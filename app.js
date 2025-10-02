@@ -83,7 +83,24 @@ const movieData = {
     {"id": 80, "title": "Baazigar", "genre": ["Crime", "Drama", "Musical"], "language": "Hindi", "origin": "India", "description": "A young man seeks revenge against a business family."},
     {"id": 81, "title": "Kaun", "genre": ["Mystery", "Thriller"], "language": "Hindi", "origin": "India", "description": "A woman alone at home faces a mysterious visitor."},
     {"id": 82, "title": "Turthu Nirgamana", "genre": ["Thriller"], "language": "Kannada", "origin": "India", "description": "A thriller exploring human nature and consequences."},
-    {"id": 83, "title": "Goodachari", "genre": ["Action", "Thriller"], "language": "Telugu", "origin": "India", "description": "A young man becomes a spy to serve his country."}
+    {"id": 83, "title": "Goodachari", "genre": ["Action", "Thriller"], "language": "Telugu", "origin": "India", "description": "A young man becomes a spy to serve his country."},
+    {"id": 84, "title": "Shimmer Lake", "genre": ["Crime", "Thriller", "Mystery"], "language": "English", "origin": "US", "description": "A small-town bank heist is told in reverse, unraveling dark secrets and unexpected twists."},
+    {"id": 85, "title": "Eternal Sunshine of the Spotless Mind", "genre": ["Drama", "Romance", "Sci-Fi"], "language": "English", "origin": "US", "description": "After a painful breakup, a couple undergoes a procedure to erase memories of each other from their minds, only to realize the value of their shared experiences."},
+    {"id": 86, "title": "Chor Nikal Ke Bhaga", "genre": ["Thriller", "Heist"], "language": "Hindi", "origin": "India", "description": "A flight attendant and her boyfriend plan a mid-air diamond heist, but things go awry when the plane is hijacked."},
+    {"id": 87, "title": "Karthik Calling Karthik", "genre": ["Thriller", "Drama"], "language": "Hindi", "origin": "India", "description": "A lonely man starts receiving mysterious phone calls from someone claiming to be himself, leading him on a journey of self-discovery and suspense."},
+    {"id": 88, "title": "Govinda Naam Mera", "genre": ["Comedy", "Thriller"], "language": "Hindi", "origin": "India", "description": "A struggling choreographer finds himself entangled in a murder mystery filled with twists, turns, and dark humor."},
+    {"id": 89, "title": "Mukundan Unni Associates", "genre": ["Crime", "Dark Comedy", "Thriller"], "language": "Malayalam", "origin": "India", "description": "An ambitious lawyer resorts to morally questionable methods to achieve success, leading to a darkly comic and thrilling journey."},
+    {"id": 90, "title": "Dhuruvangal Pathinaaru", "genre": ["Crime", "Thriller", "Mystery"], "language": "Tamil", "origin": "India", "description": "A retired police officer recounts the most challenging case of his career involving a mysterious murder with multiple suspects."},
+    {"id": 91, "title": "Gargi", "genre": ["Drama", "Thriller"], "language": "Tamil", "origin": "India", "description": "A woman fights against all odds to prove her father's innocence in a sensitive criminal case."},
+    {"id": 92, "title": "Detective Byomkesh Bakshy!", "genre": ["Crime", "Mystery", "Thriller"], "language": "Hindi", "origin": "India", "description": "A young detective investigates a complex case in 1940s Calcutta, uncovering secrets and conspiracies."},
+    {"id": 93, "title": "Wazir", "genre": ["Crime", "Thriller", "Drama"], "language": "Hindi", "origin": "India", "description": "A grieving cop and a wheelchair-bound chess grandmaster form an unlikely friendship as they seek justice and unravel a dangerous conspiracy."},
+    {"id": 94, "title": "Section 375", "genre": ["Crime", "Drama", "Thriller"], "language": "Hindi", "origin": "India", "description": "A courtroom drama where a filmmaker is accused of rape, raising questions about consent, law, and justice."},
+    {"id": 95, "title": "A Wednesday", "genre": ["Thriller", "Drama", "Crime"], "language": "Hindi", "origin": "India", "description": "An ordinary man sets off a series of events that challenge the police and expose flaws in the system, leading to a tense and thought-provoking showdown."},
+    {"id": 96, "title": "Pink", "genre": ["Drama", "Thriller", "Courtroom"], "language": "Hindi", "origin": "India", "description": "Three women are implicated in a crime, and a retired lawyer steps forward to help them fight for justice in a patriarchal society."},
+    {"id": 97, "title": "Johnny Gaddaar", "genre": ["Crime", "Thriller"], "language": "Hindi", "origin": "India", "description": "A suspenseful neo-noir about a group of criminals whose plan unravels when one of them betrays the others for personal gain."},
+    {"id": 98, "title": "Article 15", "genre": ["Crime", "Drama", "Thriller"], "language": "Hindi", "origin": "India", "description": "A young IPS officer investigates the disappearance of three girls in rural India, confronting deep-rooted caste-based discrimination and injustice."},
+    {"id": 99, "title": "Andhadhun", "genre": ["Crime", "Thriller", "Comedy"], "language": "Hindi", "origin": "India", "description": "A blind pianist becomes embroiled in a series of murders after witnessing a crime."},
+    {"id": 100, "title": "Article 370", "genre": ["Drama", "Thriller", "Political"], "language": "Hindi", "origin": "India", "description": "A gripping political thriller that explores the events and implications surrounding the abrogation of Article 370 in Jammu and Kashmir."}
   ],
   "languages": ["English", "Hindi", "Tamil", "Telugu", "Malayalam", "Kannada", "Korean", "Spanish"]
 };
@@ -243,7 +260,7 @@ function toggleLanguageFilter(language, chipElement) {
         chipElement.classList.add('active');
     }
     
-    if (appState.currentRecommendations.length > 0) {
+    if appState.currentRecommendations.length > 0) {
         filterAndDisplayMovies();
     }
 }
