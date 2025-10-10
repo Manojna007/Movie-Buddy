@@ -100,7 +100,50 @@ const movieData = {
     {"id": 97, "title": "Johnny Gaddaar", "genre": ["Crime", "Thriller"], "language": "Hindi", "origin": "India", "description": "A suspenseful neo-noir about a group of criminals whose plan unravels when one of them betrays the others for personal gain."},
     {"id": 98, "title": "Article 15", "genre": ["Crime", "Drama", "Thriller"], "language": "Hindi", "origin": "India", "description": "A young IPS officer investigates the disappearance of three girls in rural India, confronting deep-rooted caste-based discrimination and injustice."},
     {"id": 99, "title": "Andhadhun", "genre": ["Crime", "Thriller", "Comedy"], "language": "Hindi", "origin": "India", "description": "A blind pianist becomes embroiled in a series of murders after witnessing a crime."},
-    {"id": 100, "title": "Article 370", "genre": ["Drama", "Thriller", "Political"], "language": "Hindi", "origin": "India", "description": "A gripping political thriller that explores the events and implications surrounding the abrogation of Article 370 in Jammu and Kashmir."}
+    {"id": 100, "title": "Article 370", "genre": ["Drama", "Thriller", "Political"], "language": "Hindi", "origin": "India", "description": "A gripping political thriller that explores the events and implications surrounding the abrogation of Article 370 in Jammu and Kashmir."},
+    {"id": 101, "title": "Frequency", "genre": ["Sci-Fi", "Thriller"], "language": "English", "origin": "US", "description": "A man communicates with his deceased father via a ham radio, altering past and present events."},
+    {"id": 102, "title": "Primal Fear", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "An altar boy is accused of murdering a priest, and a high-profile lawyer takes on his case, uncovering shocking secrets."},
+    {"id": 103, "title": "Primer", "genre": ["Sci-Fi", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "Two engineers accidentally invent a time machine, leading to complex consequences and moral dilemmas."},
+    {"id": 104, "title": "The Secret in Their Eyes", "genre": ["Crime", "Drama", "Mystery"], "language": "Spanish", "origin": "Argentina", "description": "A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases and for his unreciprocated love with his superior."},
+    {"id": 105, "title": "Arrival", "genre": ["Sci-Fi", "Drama", "Mystery"], "language": "English", "origin": "US", "description": "A linguist is recruited to communicate with extraterrestrial visitors after mysterious spacecraft land around the world."},
+    {"id": 106, "title": "Wind River", "genre": ["Crime", "Drama", "Mystery", "Thriller"], "language": "English", "origin": "US", "description": "A wildlife tracker and an FBI agent investigate a murder on a Native American reservation, uncovering secrets and facing harsh conditions."},
+    {"id": 107, "title": "No Country for Old Men", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "A hunter stumbles upon a drug deal gone wrong and a suitcase full of money, setting off a violent cat-and-mouse chase with a relentless killer in West Texas."},
+    {"id": 108, "title": "Kill Bill: Vol. 1", "genre": ["Action", "Crime", "Thriller"], "language": "English", "origin": "US", "description": "A former assassin, known as The Bride, seeks vengeance against her ex-colleagues who betrayed her on her wedding day."},
+    {"id": 109, "title": "Kill Bill: Vol. 2", "genre": ["Action", "Crime", "Thriller"], "language": "English", "origin": "US", "description": "The Bride continues her quest for revenge, confronting her remaining enemies and ultimately facing Bill, her former lover and boss."},
+    {"id": 110, "title": "Pulp Fiction", "genre": ["Crime", "Drama"], "language": "English", "origin": "US", "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."},
+    {"id": 111, "title": "Django Unchained", "genre": ["Drama", "Western"], "language": "English", "origin": "US", "description": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner."},
+    {"id": 112, "title": "Groundhog Day", "genre": ["Comedy", "Fantasy", "Romance"], "language": "English", "origin": "US", "description": "A cynical TV weatherman finds himself reliving the same day over and over again in a small town."},
+    {"id": 113, "title": "Palm Springs", "genre": ["Comedy", "Romance", "Sci-Fi"], "language": "English", "origin": "US", "description": "Stuck in a time loop, two wedding guests develop a budding romance while living the same day repeatedly."},
+    {"id": 114, "title": "On Time", "genre": ["Sci-Fi", "Thriller"], "language": "English", "origin": "US", "description": "In a future where time is currency, a man fights to survive when he is falsely accused of murder and must race against the clock to clear his name."},
+    {"id": 115, "title": "The Matrix", "genre": ["Sci-Fi", "Action"], "language": "English", "origin": "US", "description": "A computer hacker discovers the reality he lives in is a simulated reality and joins a rebellion against its controllers."},
+    {"id": 116, "title": "Transcendence", "genre": ["Sci-Fi", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "A scientist's drive for artificial intelligence takes on dangerous implications when his consciousness is uploaded into one such program, leading to unforeseen consequences."},
+    {"id": 117, "title": "Minority Report", "genre": ["Sci-Fi", "Thriller", "Action"], "language": "English", "origin": "US", "description": "In a future where crimes are prevented before they happen, a cop becomes a fugitive when he is accused of a murder he has yet to commit."},
+    {"id": 118, "title": "Collateral", "genre": ["Crime", "Thriller"], "language": "English", "origin": "US", "description": "A cab driver finds himself the hostage of an engaging contract killer as he makes his rounds from hit to hit during one night in Los Angeles."},
+    {"id": 119, "title": "Upgrade", "genre": ["Sci-Fi", "Action", "Thriller"], "language": "English", "origin": "US", "description": "After a mugging leaves him paralyzed, a man is implanted with an experimental AI chip that gives him control of his body, but the AI gradually takes over, trapping him in a dream world with his wife."},
+    {"id": 120, "title": "Circle", "genre": ["Sci-Fi", "Thriller", "Drama"], "language": "English", "origin": "US", "description": "Fifty strangers wake up in a mysterious room, forced to choose who among them will survive as a deadly device eliminates them one by one."},
+    {"id": 121, "title": "The Shining", "genre": ["Horror", "Mystery", "Thriller"], "language": "English", "origin": "US", "description": "A family heads to an isolated hotel for the winter where a sinister presence drives the father into madness, while his psychic son sees horrific forebodings from both past and future."},
+    {"id": 122, "title": "The Silence of the Lambs", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "A young FBI trainee seeks the help of imprisoned cannibalistic serial killer Dr. Hannibal Lecter to catch another serial killer on the loose."},
+    {"id": 123, "title": "Inglourious Basterds", "genre": ["War", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "In Nazi-occupied France during World War II, a group of Jewish-American soldiers plan to assassinate Nazi leaders, while a young woman seeks revenge for her family's murder."},
+    {"id": 124, "title": "Psycho", "genre": ["Horror", "Mystery", "Thriller"], "language": "English", "origin": "US", "description": "A secretary embezzles money and checks into a remote motel run by a mysterious man with a dark secret."},
+    {"id": 125, "title": "Rear Window", "genre": ["Mystery", "Thriller"], "language": "English", "origin": "US", "description": "A wheelchair-bound photographer suspects his neighbor of murder after witnessing suspicious events from his apartment window."},
+    {"id": 126, "title": "Vertigo", "genre": ["Mystery", "Romance", "Thriller"], "language": "English", "origin": "US", "description": "A retired detective with a fear of heights is hired to follow a woman whose peculiar behavior leads to obsession and tragedy."},
+    {"id": 127, "title": "North by Northwest", "genre": ["Adventure", "Mystery", "Thriller"], "language": "English", "origin": "US", "description": "An advertising executive is mistaken for a government agent and pursued across the country by spies."},
+    {"id": 128, "title": "Strangers on a Train", "genre": ["Crime", "Thriller"], "language": "English", "origin": "US", "description": "Two strangers meet on a train and one proposes exchanging murders to solve their problems, leading to deadly consequences."},
+    {"id": 129, "title": "Rebecca", "genre": ["Mystery", "Thriller", "Drama"], "language": "English", "origin": "UK", "description": "A young bride is overshadowed by her husband's first wife, Rebecca, whose legacy haunts their mansion and marriage."},
+    {"id": 130, "title": "American Psycho", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "A wealthy New York City investment banking executive hides his alternate psychopathic ego from his friends as he delves deeper into his violent, hedonistic fantasies."},
+    {"id": 131, "title": "Enemy", "genre": ["Mystery", "Thriller"], "language": "English", "origin": "Canada", "description": "A man's life unravels after he discovers his exact look-alike in a movie, leading to a surreal and psychological journey."},
+    {"id": 132, "title": "Prisoners", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "When his daughter and her friend go missing, a desperate father takes matters into his own hands as the police pursue multiple leads and the pressure mounts."},
+    {"id": 133, "title": "The Curious Case of Benjamin Button", "genre": ["Drama", "Fantasy", "Romance"], "language": "English", "origin": "US", "description": "A man is born old and ages backwards, experiencing life and love in a most unusual way."},
+    {"id": 134, "title": "The Departed", "genre": ["Crime", "Thriller"], "language": "English", "origin": "US", "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in Boston."},
+    {"id": 135, "title": "Zodiac", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "A cartoonist becomes obsessed with tracking down the Zodiac Killer, a serial murderer who terrorizes San Francisco."},
+    {"id": 136, "title": "Oldboy", "genre": ["Mystery", "Thriller", "Action"], "language": "Korean", "origin": "South Korea", "description": "After being imprisoned in a cell for 15 years, a man is released and must find his captor in five days."},
+    {"id": 137, "title": "Se7en", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "Two detectives hunt a serial killer who uses the seven deadly sins as his motives."},
+    {"id": 138, "title": "The Girl with the Dragon Tattoo", "genre": ["Crime", "Mystery", "Thriller"], "language": "English", "origin": "US", "description": "A journalist and a hacker investigate a wealthy family's dark secrets and a decades-old disappearance."},
+    {"id": 139, "title": "Glass Onion: A Knives Out Mystery", "genre": ["Mystery", "Comedy", "Thriller"], "language": "English", "origin": "US", "description": "Detective Benoit Blanc travels to Greece to peel back the layers of a mystery involving a tech billionaire and his eclectic friends."},
+    {"id": 140, "title": "Knives Out", "genre": ["Mystery", "Comedy", "Thriller"], "language": "English", "origin": "US", "description": "A renowned detective investigates the death of a wealthy patriarch during a dysfunctional family gathering."}
+
+
+
   ],
   "languages": ["English", "Hindi", "Tamil", "Telugu", "Malayalam", "Kannada", "Korean", "Spanish"]
 };
@@ -445,7 +488,7 @@ function toggleFavorite(movieId, button) {
 // Toggle watched status
 function toggleWatched(movieId, button) {
     const movie = movieData.movies.find(m => m.id === movieId);
-    
+
     if (appState.watchedMovies.has(movieId)) {
         appState.watchedMovies.delete(movieId);
         button.classList.remove('watched');
@@ -456,8 +499,27 @@ function toggleWatched(movieId, button) {
         button.classList.add('watched');
         button.innerHTML = '<span class="material-icons">check_circle</span>Watched';
         showSnackbar(`Marked "${movie.title}" as watched`);
+
+        // Replace the watched movie with a new unwatched one
+        // Only if recommendations are being shown
+        const recIndex = appState.currentRecommendations.findIndex(m => m.id === movieId);
+        if (recIndex !== -1) {
+            // Find all movies not in watched or current recommendations
+            const excludedIds = new Set([
+                ...appState.currentRecommendations.map(m => m.id),
+                ...appState.watchedMovies
+            ]);
+            const available = movieData.movies.filter(m => !excludedIds.has(m.id));
+            if (available.length > 0) {
+                // Pick a random new movie
+                const newMovie = available[Math.floor(Math.random() * available.length)];
+                appState.currentRecommendations[recIndex] = newMovie;
+                displayMovies(appState.currentRecommendations);
+                showSnackbar(`Replaced with "${newMovie.title}"`);
+            }
+        }
     }
-    
+
     updateStatistics();
 }
 
