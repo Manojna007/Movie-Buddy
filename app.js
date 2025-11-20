@@ -502,17 +502,24 @@ function toggleWatched(movieId, button) {
 
         // Replace the watched movie with a new unwatched one
         // Only if recommendations are being shown
-        const recIndex = appState.currentRecommendations.findIndex(m => m.id === movieId);
+         const recIndex = appState.currentRecommendations.findIndex(m => m.id === movieId);
         if (recIndex !== -1) {
-            // Find all movies not in watched or current recommendations
+            const originalLang = movie.language;
             const excludedIds = new Set([
                 ...appState.currentRecommendations.map(m => m.id),
                 ...appState.watchedMovies
             ]);
-            const available = movieData.movies.filter(m => !excludedIds.has(m.id));
-            if (available.length > 0) {
-                // Pick a random new movie
-                const newMovie = available[Math.floor(Math.random() * available.length)];
+            let availableSameLang = movieData.movies.filter(m => !excludedIds.has(m.id) && m.language === originalLang);
+            let newMovie = null;
+            if (availableSameLang.length > 0) {
+                newMovie = availableSameLang[Math.floor(Math.random() * availableSameLang.length)];
+            } else {
+                const availableAny = movieData.movies.filter(m => !excludedIds.has(m.id));
+                if (availableAny.length > 0) {
+                    newMovie = availableAny[Math.floor(Math.random() * availableAny.length)];
+                }
+            }
+            if (newMovie) {
                 appState.currentRecommendations[recIndex] = newMovie;
                 displayMovies(appState.currentRecommendations);
                 showSnackbar(`Replaced with "${newMovie.title}"`);
