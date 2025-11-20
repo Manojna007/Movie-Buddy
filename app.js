@@ -312,24 +312,26 @@ function toggleLanguageFilter(language, chipElement) {
 function getMovieRecommendations(count) {
     showLoading();
     
-    // Use setTimeout instead of async/await for better compatibility
     setTimeout(() => {
         let filteredMovies = [...movieData.movies];
         
-        // Apply language filter if any selected
         if (appState.selectedLanguages.length > 0) {
             filteredMovies = filteredMovies.filter(movie => 
                 appState.selectedLanguages.includes(movie.language)
             );
         }
         
-        // Apply search filter if any
         if (appState.searchQuery) {
             filteredMovies = filteredMovies.filter(movie =>
                 movie.title.toLowerCase().includes(appState.searchQuery) ||
                 movie.description.toLowerCase().includes(appState.searchQuery) ||
                 movie.genre.some(g => g.toLowerCase().includes(appState.searchQuery))
             );
+        }
+
+        // Exclude watched movies from recommendations
+        if (appState.watchedMovies.size > 0) {
+            filteredMovies = filteredMovies.filter(m => !appState.watchedMovies.has(m.id));
         }
         
         if (filteredMovies.length === 0) {
@@ -338,7 +340,6 @@ function getMovieRecommendations(count) {
             return;
         }
         
-        // Randomly shuffle and select movies
         const shuffled = shuffleArray(filteredMovies);
         const selected = shuffled.slice(0, Math.min(count, shuffled.length));
         
@@ -364,14 +365,17 @@ function shuffleArray(array) {
 function filterAndDisplayMovies() {
     let filteredMovies = [...appState.currentRecommendations];
     
-    // Apply language filter
+    // Always exclude watched movies from displayed results
+    if (appState.watchedMovies.size > 0) {
+        filteredMovies = filteredMovies.filter(m => !appState.watchedMovies.has(m.id));
+    }
+    
     if (appState.selectedLanguages.length > 0) {
         filteredMovies = filteredMovies.filter(movie => 
             appState.selectedLanguages.includes(movie.language)
         );
     }
     
-    // Apply search filter
     if (appState.searchQuery) {
         filteredMovies = filteredMovies.filter(movie =>
             movie.title.toLowerCase().includes(appState.searchQuery) ||
@@ -500,9 +504,7 @@ function toggleWatched(movieId, button) {
         button.innerHTML = '<span class="material-icons">check_circle</span>Watched';
         showSnackbar(`Marked "${movie.title}" as watched`);
 
-        // Replace the watched movie with a new unwatched one
-        // Only if recommendations are being shown
-         const recIndex = appState.currentRecommendations.findIndex(m => m.id === movieId);
+        const recIndex = appState.currentRecommendations.findIndex(m => m.id === movieId);
         if (recIndex !== -1) {
             const originalLang = movie.language;
             const excludedIds = new Set([
@@ -523,6 +525,10 @@ function toggleWatched(movieId, button) {
                 appState.currentRecommendations[recIndex] = newMovie;
                 displayMovies(appState.currentRecommendations);
                 showSnackbar(`Replaced with "${newMovie.title}"`);
+            } else {
+                appState.currentRecommendations.splice(recIndex, 1);
+                displayMovies(appState.currentRecommendations);
+                showSnackbar(`Removed "${movie.title}" from recommendations`);
             }
         }
     }
