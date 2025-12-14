@@ -151,8 +151,10 @@ const movieData = {
     {"id": 148, "title": "The Lincoln Lawyer", "genre": ["Crime", "Drama", "Thriller"], "language": "English", "origin": "US", "description": "A defense attorney who runs his practice from the back of his car takes on a high-profile case that uncovers dangerous secrets."},
     {"id": 149, "title": "Frailty", "genre": ["Horror", "Mystery", "Thriller"], "language": "English", "origin": "US", "description": "A father believes he is commanded by God to punish evildoers, drawing his sons into a chilling moral crisis."},
     {"id": 150, "title": "Memoir of a Murderer", "genre": ["Crime", "Drama", "Thriller"], "language": "Korean", "origin": "South Korea", "description": "An aging serial killer suffering from Alzheimer's struggles with memory as a copycat emerges and his past resurfaces."},
-    {"id": 151, "title": "Mathu Vadalara 1 & 2", "genre": ["Comedy", "Crime", "Thriller"], "language": "Telugu", "origin": "India", "description": "A darkly comic crime story about a small-time man whose life spirals into chaos—collecting both chapters in one entry."}
-
+    {"id": 151, "title": "Mathu Vadalara 1 & 2", "genre": ["Comedy", "Crime", "Thriller"], "language": "Telugu", "origin": "India", "description": "A darkly comic crime story about a small-time man whose life spirals into chaos—collecting both chapters in one entry."},
+    {"id": 152, "title": "Malang", "genre": ["Action", "Thriller", "Romance"], "language": "Hindi", "origin": "India", "description": "A dark, high‑octane thriller about love, revenge and unexpected consequences."},
+    {"id": 153, "title": "Truth or Dare", "genre": ["Horror", "Thriller"], "language": "English", "origin": "US", "description": "Friends' game of Truth or Dare turns deadly when a supernatural force enforces the rules."}
+/
 
 
   ],
