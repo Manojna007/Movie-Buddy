@@ -154,7 +154,7 @@ const movieData = {
     {"id": 151, "title": "Mathu Vadalara 1 & 2", "genre": ["Comedy", "Crime", "Thriller"], "language": "Telugu", "origin": "India", "description": "A darkly comic crime story about a small-time man whose life spirals into chaos—collecting both chapters in one entry."},
     {"id": 152, "title": "Malang", "genre": ["Action", "Thriller", "Romance"], "language": "Hindi", "origin": "India", "description": "A dark, high‑octane thriller about love, revenge and unexpected consequences."},
     {"id": 153, "title": "Truth or Dare", "genre": ["Horror", "Thriller"], "language": "English", "origin": "US", "description": "Friends' game of Truth or Dare turns deadly when a supernatural force enforces the rules."}
-/
+
 
 
   ],
